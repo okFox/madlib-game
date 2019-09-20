@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sarah's MadLib</title>
+    <script src="app.js"></script>
+</head>
+<body>
+    <p>
+        <label for="noun1">Enter a noun.
+            <input type="text" id='noun1'>
+        </label>
+        <br>
+        <label for="verb1">Enter a verb (past tense).
+            <input type="text" id='verb1'>
+        </label>
+        <br>
+        <label for="adj1">Enter an adjective.
+            <input type="text" id='adj1'>
+        </label>
+        <br>
+        <label for="noun2">Enter another noun.
+            <input type="text" id='noun2'>
+        </label>
+    </p>
+
+    <button onclick="generateMadlib()">Generate MadLib!</button>
+
+<section>The quick brown <span id='noun1span'></span><span id='verb1Value'></span> over the <span id='adv1Value'></span> <span id='noun2Value'></span>
+
+</section>
+
+
+
+
+</body>
+</html>
