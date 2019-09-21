@@ -1,27 +1,41 @@
 
-
 function generateMadlib(){
-
-    const nounspan = document.getElementById('noun1Value');
-    const verbspan = document.getElementById('verb1Value');
-    const adjspan = document.getElementById('adj1Value');
-    const noun2span = document.getElementById('noun2Value');
- 
-const noun1 = document.getElementById('noun1');
-const verb1 = document.getElementById('verb1');
-const adj1 = document.getElementById('adj1');
-const noun2 = document.getElementById('noun2');
+    //noun 1
+    const noun1Input = document.getElementById('noun1-input');
+    const noun1 = noun1Input.value;
     
-const noun1Value = noun1.value;
-//console.log(noun1Value);
-nounspan.textContent = noun1.value;
+    const noun1span = document.getElementById('noun1');
+    noun1span.textContent = noun1;
 
-const verb1Value = verb1.value;
-verbspan.textContent = verb1Value;
+    //console.log('noun1');
 
-const adjValue = adj1.value;
-adjspan.textContent = adj1.value;
+    //verb
+    const verbInput = document.getElementById('verb-input');
+    const verb = verbInput.value;
+    
+    const verbspan = document.getElementById('verb');
+    verbspan.textContent = verb;
 
-const noun2Value = noun2.value;
-noun2span.textContent = noun2.value;
+
+
+    //adjective
+    const adjInput = document.getElementById('adj-input');
+    const adj = adjInput.value;
+    
+    const adjspan = document.getElementById('adj');
+    adjspan.textContent = adj;
+
+
+
+    //noun 2
+    const noun2Input = document.getElementById('noun2-input');
+    const noun2 = noun2Input.value;
+    
+    const noun2span = document.getElementById('noun2');
+    noun2span.textContent = noun2;
+
+    //from JBJ's
+    const showStory = document.getElementById('story');
+    showStory.classList.remove('hidden');
 }
+

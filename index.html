@@ -5,35 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sarah's MadLib</title>
-    <script src="app.js"></script>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <p>
-        <label for="noun1">Enter a noun.
-            <input type="text" id='noun1'>
-        </label>
-        <br>
-        <label for="verb1">Enter a verb (past tense).
-            <input type="text" id='verb1'>
-        </label>
-        <br>
-        <label for="adj1">Enter an adjective.
-            <input type="text" id='adj1'>
-        </label>
-        <br>
-        <label for="noun2">Enter another noun.
-            <input type="text" id='noun2'>
-        </label>
-    </p>
+    <header>
+        <h1 class='title'>MadLib Mania!</h1>
+    </header>
 
-    <button onclick="generateMadlib()">Generate MadLib!</button>
+    <section class='input-boxes'>
+        <p>
 
-<section>The quick brown <span id='noun1span'></span><span id='verb1Value'></span> over the <span id='adv1Value'></span> <span id='noun2Value'></span>
+            <label class="textbox">Enter a noun.   
+                <input type="text" id='noun1-input'>
+            </label>
 
-</section>
+            <label class="textbox">Enter a verb (past tense).
+                <input type="text" id='verb-input'>
+            </label>
 
+            <label class="textbox">Enter an adjective.
+                <input type="text" id='adj-input'>
+            </label>
 
+            <label class="textbox">Enter another noun.
+                <input type="text" id='noun2-input'>
+            </label>
+        </p>
 
+    </section>
+
+    <section id="button">
+        <button onclick="generateMadlib()">Generate MadLib!</button>
+    </section>
+
+    <article class="hidden" id="story">
+    
+        The quick brown <span id='noun1'></span> <span id='verb'> </span> over the <span id='adj'></span> <span id='noun2'></span>
+
+    </article>
 
 </body>
+<script src="app.js"></script>
 </html>
