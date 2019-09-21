@@ -20,13 +20,15 @@ input {
     flex: 0 0 200px;
     margin-left: 10px;
   }
-article {
-    display: flex;
-    align-content: space-around; 
-}
+
 article.hidden {
 
     opacity: 0;
 }
+
+section.button {
+    display: flex;
+    padding: 20px; 
+  }
 
 
